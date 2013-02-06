@@ -1,0 +1,6 @@
+<ul class="nav nav-list">
+  <li class="nav-header">Latest posts</li>
+  {% for post in site.posts limit:5 %}
+  <li><a href="">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
